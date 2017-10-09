@@ -1,64 +1,13 @@
-# React Hello World
+# Hello World with React
 
-1) Create a new NPM Package
-```sh
-$ npm init -Y
+Download this repository and install the npm package:
 ```
-2) Add the webpack module bundler
-```sh
-$ npm install --save-dev webpack
+$ npm install
 ```
-3) Create a webpack.config.js
+That is it! Start coding your ReactJS application.
 
+## Bundle your files using:
 ```
-const path = require('path');
-
-module.exports = {
-  entry: './src/js/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  }
-};
+$ npm run start
 ```
-4) Install babel
-
-```sh
-$ npm install --save-dev babel-core babel-loader babel-cli babel-preset-env
-```
-
-Configure your webpack.config.js to use the babel loader
-```
-const path = require('path');
-
-module.exports = {
-  entry: './src/js/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-  module: {
-    loaders: [
-        { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-    ]
-  }
-};
-```
-
-Also configure your package.json to use the "env" and "react" presets.
-```json
-  ...
-  "babel":{
-    "presets": [
-      "env",
-      "react"
-    ]
-  },
-  ...
-```
-
-5) Install react
-
-```sh
-npm install --save react react-dom
-```
+If you want to manually install all of this read the [MANUAL.md file.](/alesanchezr/react-hello/blob/master/README.md)

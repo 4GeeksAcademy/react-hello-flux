@@ -10,4 +10,4 @@ That is it! Start coding your ReactJS application.
 ```
 $ npm run start
 ```
-If you want to manually install all of this read the [MANUAL.md file.](/alesanchezr/react-hello/blob/master/README.md)
+If you want to manually install all of this read the [MANUAL.md file.](/master/MANUAL.md)

@@ -6,8 +6,17 @@ $ npm install
 ```
 That is it! Start coding your ReactJS application.
 
-## Bundle your files using:
+## Bundle development server with hot module using:
+```
+$ npm run dev
+```
+
+## Bundle your files for development using:
 ```
 $ npm run start
 ```
-If you want to manually install all of this read the [MANUAL.md file.](/MANUAL.md)
+
+## Bundle your files for production using:
+```
+$ npm run production
+```

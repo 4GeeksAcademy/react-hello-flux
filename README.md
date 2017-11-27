@@ -1,6 +1,21 @@
 # Hello World with React
 
-Download this repository and install the npm package:
+Download this repository
+```
+$ git clone https://github.com/alesanchezr/react-hello.git
+$ cd react-hello
+```
+
+Move all the content outsithe de react-hello folder
+
+```
+$ mv * ../
+$ mv .git/ ../
+$ cd ..
+$ rmdir react-hello/
+```
+
+and install the npm package:
 ```
 $ npm install
 ```

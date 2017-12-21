@@ -1,19 +1,32 @@
+//import react into the bundle
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//include jquery into the bundle and store its contents into the $ variable
 import $ from "jquery";
+//include bootstrap npm library into the bundle
 import 'bootstrap';
-import '../css/index.scss';
 
-var verySimpleComponent = function(){
-  return (<p>Hello World</p>);
+//include your index.scss file into the bundle
+import '../styles/index.scss';
+
+//include images into your bundle
+import rigoImage from '../img/rigo-baby.jpg';
+
+
+//create your first component
+var VerySimpleComponent = function(){
+  return (
+    <div className="text-center mt-5">
+      <h1>Hello Rigo!</h1>
+      <p><img src={'./public/'+rigoImage} /></p>
+      <a href="#" className="btn btn-success">If you see this gree button... bootstrap is working</a>
+    </div>
+  );
 }
 
-
-// Add CSS files to bundle
-//require('../css/styles.scss');
-// Render application to DOM
+//render your react application
 ReactDOM.render(
-    <verySimpleComponent />,
+    <VerySimpleComponent />,
     document.querySelector('#app')
 );

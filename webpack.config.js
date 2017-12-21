@@ -11,16 +11,21 @@ module.exports = {
     loaders: [
         { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader" },
         {
-            test: /\.scss$/,
-            use: [{
-                loader: "style-loader" // creates style nodes from JS strings
-            }, {
-                loader: "css-loader" // translates CSS into CommonJS
-            }, {
-                loader: "sass-loader" // compiles Sass to CSS
-            }]
+          test: /\.scss$/,
+          use: [{
+              loader: "style-loader" // creates style nodes from JS strings
+          }, {
+              loader: "css-loader" // translates CSS into CommonJS
+          }, {
+              loader: "sass-loader" // compiles Sass to CSS
+          }]
         }, //css only files
-        { test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] }, //for images
+        { 
+          test: /\.(png|svg|jpg|gif)$/, use: {
+            loader: 'file-loader',
+            options: { name: '[name].[ext]' } 
+          }
+        }, //for images
         { test: /\.woff($|\?)|\.woff2($|\?)|\.ttf($|\?)|\.eot($|\?)|\.svg($|\?)/, use: ['file-loader'] } //for fonts
     ]
   },

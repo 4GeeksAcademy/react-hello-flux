@@ -19,7 +19,6 @@ $ npm install
 ```
 That is it! Start coding your ReactJS application.
 
-<<<<<<< HEAD
 Note: If you ever want to manually install all of this read the [MANUAL.md file.](/MANUAL.md)
 
 ## How start coding?
@@ -62,14 +61,6 @@ For example, inside index.js you can do:
 window.onload = function(){
     console.log('hello world');
 }
-=======
-## Bundle development server with hot module using:
-```
-$ npm run dev
-```
-
-## Bundle your files for development using:
->>>>>>> f296f096d4b91fc52cd4d5e4b1a27523a8b7dc5b
 ```
 
 To include images, styles or any other type of file just use the **import** command:
@@ -84,12 +75,6 @@ To include images, styles or any other type of file just use the **import** comm
 
 ```
 
-<<<<<<< HEAD
 1. All your JS and CSS code must go inside the src/ directory, and webpack will automaticly bundle them and export them into the public folder.
+
 2. The HTML code must be inside public/index.html
-=======
-## Bundle your files for production using:
-```
-$ npm run production
-```
->>>>>>> f296f096d4b91fc52cd4d5e4b1a27523a8b7dc5b

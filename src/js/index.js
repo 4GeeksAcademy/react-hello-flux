@@ -10,23 +10,11 @@ import 'bootstrap';
 //include your index.scss file into the bundle
 import '../styles/index.scss';
 
-//include images into your bundle
-import rigoImage from '../img/rigo-baby.jpg';
-
-
-//create your first component
-var VerySimpleComponent = function(){
-  return (
-    <div className="text-center mt-5">
-      <h1>Hello Rigo!</h1>
-      <p><img src={'./public/'+rigoImage} /></p>
-      <a href="#" className="btn btn-success">If you see this gree button... bootstrap is working</a>
-    </div>
-  );
-}
+//import your own components
+import {Home} from './component/home.jsx';
 
 //render your react application
 ReactDOM.render(
-    <VerySimpleComponent />,
+    <Home />,
     document.querySelector('#app')
 );

@@ -57,8 +57,12 @@ Also configure your package.json to use the "env" and "react" presets.
   ...
 ```
 
-5) Install react
+5) Install react pnm libraries (react is just a library)
 
 ```sh
 npm install --save react react-dom
 ```
+
+## Important note:
+
+If you want include Images, Fonts or any other types of files rather than JS you will have to add the loaders into the webpack.config.js and install the respective npm packages (image-loader, style-loader, etc).

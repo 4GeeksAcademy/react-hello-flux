@@ -2,7 +2,7 @@
 
 ##### Download this repository
 ```
-$ git clone https://github.com/alesanchezr/react-hello.git
+$ git clone https://github.com/4GeeksAcademy/react-hello.git
 ```
 
 ##### Move all the content outside the react-hello folder

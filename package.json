@@ -40,6 +40,7 @@
     "query-string": "^5.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-flux-dash": "^1.0.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "webpack-dev-server": "^2.9.2"

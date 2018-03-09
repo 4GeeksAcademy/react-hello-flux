@@ -2,15 +2,15 @@
 
 ##### Download this repository
 ```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
+$ git clone https://github.com/4GeeksAcademy/react-hello-flux.git
 ```
 
 ##### Move all the content outside the react-hello folder
 
 ```
-$ mv react-hello/* ./
-$ mv react-hello/.* ./
-$ rmdir react-hello/
+$ mv react-hello-flux/* ./
+$ mv react-hello-flux/.* ./
+$ rmdir react-hello-flux/
 ```
 
 ##### and install the npm package:

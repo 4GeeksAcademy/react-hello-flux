@@ -11,6 +11,7 @@ export default class Layout extends Flux.View {
                 <BrowserRouter>
                     <div>
                         <Switch>
+                            <Route exact path="/index.html" component={Home} />
                             <Route exact path="/" component={Home} />
                             <Route exact path="/home" component={Home} />
                             <Route exact path="/product/:id" component={Product} />

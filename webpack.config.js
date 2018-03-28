@@ -1,18 +1,41 @@
+
 const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-  entry: './src/js/index.js', 
+  entry: [
+    './src/js/index.js', 
+  ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public')
   },
   module: {
-    loaders: [
-        { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader" },
+    rules: [
         {
-          test: /\.scss$/,
-          use: [{
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: ['babel-loader']
+        },
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: ['babel-loader', 'eslint-loader']
+        },
+        { test: /\.md$/, use: [
+              {
+                  loader: "html-loader"
+              },
+              {
+                  loader: "markdown-loader",
+                  options: {
+                      /* your options here */
+                  }
+              }
+          ]
+        },
+        {
+          test: /\.scss$/, use: [{
               loader: "style-loader" // creates style nodes from JS strings
           }, {
               loader: "css-loader" // translates CSS into CommonJS
@@ -31,23 +54,17 @@ module.exports = {
   },
   resolve: {
     extensions: ['*', '.js', '.jsx'],
-    alias: {
-        'jquery': require.resolve('jquery'),
-    }
   },
   devtool: "source-map",
   devServer: {
-    contentBase: './dist',
+    contentBase:  './dist',
+    hot: true,
     disableHostCheck: true,
-    hot: true
+    historyApiFallback: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-      Popper: ['popper.js', 'default'],
       // In case you imported plugins individually, you must also require them here:
       Util: "exports-loader?Util!bootstrap/js/dist/util",
       Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown",

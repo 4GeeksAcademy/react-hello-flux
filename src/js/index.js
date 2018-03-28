@@ -1,6 +1,7 @@
 //import react into the bundle
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 //include jquery into the bundle and store its contents into the $ variable
 import $ from "jquery";

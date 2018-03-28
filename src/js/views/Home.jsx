@@ -10,7 +10,7 @@ export default class Home extends Flux.View {
     return (
         <div className="text-center mt-5">
             <h1>Hello Rigo!</h1>
-            <p><img src={'./public/'+rigoImage} /></p>
+            <p><img src={rigoImage} /></p>
             <a href="#" className="btn btn-success">If you see this button in green Bootstrap is working!</a>
             <ul className="nav navbar-nav list-inline">
                 <li className="list-inline-item">

@@ -1,29 +1,26 @@
-# Hello World with React and Cloud 9
+# Hello World with React + Flux
 
-##### Download this repository
-```
-$ git clone https://github.com/4GeeksAcademy/react-hello-flux.git
-```
+This boilerplate is intended for 4Geeks Academy students when doing projects with React.js using Flux.
 
-##### Move all the content outside the react-hello folder
+## Installation
 
+##### 1. Using the breathecode-cli:
 ```
-$ mv react-hello-flux/* ./
-$ mv react-hello-flux/.* ./
-$ rmdir react-hello-flux/
+$ breathecode start:flux
 ```
+Note: if you don't have the breathecode-cli, [here are the installation instructions](https://github.com/breatheco-de/breathecode-cli).
 
-##### and install the npm package:
+##### 2. Install the npm dependencies:
 ```
 $ npm install
 ```
-That is it! Start coding your ReactJS application.
+That is it! Start coding your ReactJS+Flux application.
 
 Note: If you ever want to manually install all of this read the [MANUAL.md file.](/MANUAL.md)
 
 ## How start coding?
 
-Now you have an index.js that will start your javascript execution (like the window.onload).
+Now you have a src/js/index.js that will start your javascript execution (like the window.onload that you would use in Vanilla.js).
 
 ###### Every time you save your source code (js & css files) you will have to re-build your bundle.
 

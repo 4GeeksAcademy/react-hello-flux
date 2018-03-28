@@ -6,7 +6,7 @@ $ npm init -Y
 ```
 2) Add the webpack module bundler
 ```sh
-$ npm install --save-dev webpack
+$ npm install --save-dev webpack webpack-cli
 ```
 3) Create a webpack.config.js
 

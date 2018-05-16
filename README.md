@@ -6,7 +6,7 @@ This boilerplate is intended for 4Geeks Academy students when doing projects wit
 
 ##### 1. Using the breathecode-cli:
 ```
-$ breathecode start:flux
+$ breathecode start:flux -r
 ```
 Note: if you don't have the breathecode-cli, [here are the installation instructions](https://github.com/breatheco-de/breathecode-cli).
 

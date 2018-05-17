@@ -4,13 +4,19 @@ This boilerplate is intended for 4Geeks Academy students when doing projects wit
 
 ## Installation
 
-##### 1. Using the breathecode-cli:
+##### 1. Make sure you have node 8+
+```
+$ nvm install 8
+$ nvm use 8
+```
+
+##### 2. Using the breathecode-cli:
 ```
 $ breathecode start:flux -r
 ```
 Note: if you don't have the breathecode-cli, [here are the installation instructions](https://github.com/breatheco-de/breathecode-cli).
 
-##### 2. Install the npm dependencies:
+##### 3. Install the npm dependencies:
 ```
 $ npm install
 ```

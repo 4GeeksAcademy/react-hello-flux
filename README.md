@@ -4,10 +4,11 @@ This boilerplate is intended for 4Geeks Academy students when doing projects wit
 
 ## Installation
 
-##### 1. Make sure you have node 8+
+##### 1. Make sure you have node 8+ and the breathecode-cli
 ```
 $ nvm install 8
 $ nvm use 8
+$ npm install @breathecode/breathecode-cli -g
 ```
 
 ##### 2. Using the breathecode-cli:

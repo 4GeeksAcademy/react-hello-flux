@@ -32,27 +32,3 @@ Note: If you ever want to manually install all of this read the [MANUAL.md file.
 ### REMEMBER:
 
 The application flow starts at **index.js**, you have to import any other files or assets into index.js in order for webpack to include them in the bundle.
-
-For example, inside index.js you can do:
-
-```js
-window.onload = function(){
-    console.log('hello world');
-}
-```
-
-To include images, styles or any other type of file just use the **import** command:
-
-```js
-
-    //This will include file.js into your bundle.
-    import 'js/file2.js';
-    
-    //this will include the styles at index.scss to your bundle.
-    import '../styles/index.scss';
-
-```
-
-1. All your JS and CSS code must go inside the src/ directory, and webpack will automaticly bundle them and export them into the public folder.
-
-2. The HTML code must be inside public/index.html

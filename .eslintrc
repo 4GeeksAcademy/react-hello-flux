@@ -22,5 +22,10 @@
     "react/jsx-indent": ["error", 4],
     "react/prop-types": [2]
   },
+  "settings": {
+    "react": {
+      "version": "16.4.1", // React version, default to the latest React stable release
+    }
+  },
   "extends": ["eslint:recommended", "plugin:react/recommended"]
 }

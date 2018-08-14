@@ -2,7 +2,7 @@ import React from "react";
 import Flux from "@4geeksacademy/react-flux-dash";
 import { Link } from "react-router-dom";
 
-export default class Product extends Flux.View {
+export default class Product extends Flux.DashView {
     render() {
         return (
             <div className="p-5">

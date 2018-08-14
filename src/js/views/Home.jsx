@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import rigoImage from '../../img/rigo-baby.jpg';
 import ButtonComponent from '../components/ButtonComponent.jsx';
 
-export default class Home extends Flux.View {
+export default class Home extends Flux.DashView {
   render() {
     return (
         <div className="text-center mt-5">

@@ -11,7 +11,7 @@ $ nvm i 8
 
 ##### 2. Using the breathecode-cli:
 ```
-$ bc start:flux -r
+$ bc start:flux-project -r
 ```
 Note: if you don't have the breathecode-cli, [here are the installation instructions](https://github.com/breatheco-de/breathecode-cli).
 

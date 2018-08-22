@@ -9,6 +9,8 @@ import '../styles/index.scss';
 //import your own components
 import Layout from './Layout.jsx';
 
+console.log('Basename: ', process.env.BASENAME);
+
 //render your react application
 ReactDOM.render(
     <Layout />,

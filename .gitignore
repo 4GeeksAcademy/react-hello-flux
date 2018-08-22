@@ -49,7 +49,7 @@ Thumbs.db
 
 node_modules/
 public/*
-
+!dist/index.html
 # ignore the dist directory were our bundle files are going to be
 !.gitkeep
 !.htaccess

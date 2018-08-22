@@ -6,8 +6,8 @@ const Dotenv = require('dotenv-webpack');
 module.exports = merge(common, {
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
-    publicPath: '/'
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: path.resolve(__dirname, '/')
   },
   mode: 'development',
   devtool: "source-map",

@@ -21,7 +21,7 @@ export default class Layout extends Flux.View {
                 {/*
                     The <BrowserRouter> is needed when you want your application to use the React-Router npm package.
                 */}
-                <BrowserRouter>
+                <BrowserRouter basename={process.env.BASENAME}>
                     <div>
                         {/*
                             Inside the <Switch> component is were we declare all of our application routes

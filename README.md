@@ -24,11 +24,11 @@ $ npm install
 ```
 $ npm run c9
 ```
+## Start coding! 
 
-That is it! Start coding your ReactJS+Flux application.
+Start coding your React Application application, update the `index.scss` or `index.js` depending on your needs.
+Add more files into your `./views`, `./components` or styles folder as you need them.
 
-Note: If you ever want to manually install all of this read the [MANUAL.md file.](/MANUAL.md)
+## Publish your website! 
 
-### REMEMBER:
-
-The application flow starts at **index.js**, you have to import any other files or assets into index.js in order for webpack to include them in the bundle.
+This boilerplate is 100% compatible with the free github pages hosting. [Publish your website in 1 minute.](https://github.com/4GeeksAcademy/vanillajs-hello#8-how-do-i-publish-the-website)

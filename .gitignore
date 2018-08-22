@@ -9,10 +9,8 @@ php_errorlog
 
 # track this file .gitignore (i.e. do NOT ignore it)
 !composer.json
-!webpack.config.js
+!webpack.*.js
 !package.json
-!webpack.production.js
-!webpack.development.js
 
 # track readme.md in the root (i.e. do NOT ignore it)
 !README.md
@@ -53,7 +51,5 @@ Thumbs.db
 node_modules/
 
 # ignore the dist directory were our bundle files are going to be
-public/*
-
 !.gitkeep
 !.htaccess

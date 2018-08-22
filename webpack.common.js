@@ -5,13 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
-    './src/js/index.js',  
+    path.resolve(__dirname, './src/js/index.js'),  
   ],
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
-    publicPath: path.resolve(__dirname, '/')
-  },
   module: {
     rules: [
         {
@@ -32,7 +27,7 @@ module.exports = {
           ]
         },
         {
-          test: /\.scss$/, use: [{
+          test: /\.(css|scss)$/, use: [{
               loader: "style-loader" // creates style nodes from JS strings
           }, {
               loader: "css-loader" // translates CSS into CommonJS

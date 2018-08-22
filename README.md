@@ -31,4 +31,9 @@ Add more files into your `./views`, `./components` or styles folder as you need 
 
 ## Publish your website! 
 
-This boilerplate is 100% compatible with the free github pages hosting. [Publish your website in 1 minute.](https://github.com/4GeeksAcademy/vanillajs-hello#8-how-do-i-publish-the-website)
+This boilerplate is 100% compatible with the free github pages hosting.
+To publish your website into github please run:
+```sh
+$ npm run deploy
+```
+Note: You will need to [configure github pages for the branch gh-pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages)

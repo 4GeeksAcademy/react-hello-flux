@@ -1,3 +1,5 @@
+:warning: This boilerplate is deprecated. [Use this one instead](https://github.com/4GeeksAcademy/react-hello-webapp) :warning:
+
 # Hello World with React + Flux
 
 This boilerplate is intended for 4Geeks Academy students when doing projects with React.js using Flux.

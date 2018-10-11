@@ -1,4 +1,4 @@
-:warning: Message for 4Geeks Academy teachers: We are now using Context API instead of Flux. [Use this boilerplate instead](https://github.com/4GeeksAcademy/react-hello-webapp) :warning:
+:warning: Message for 4Geeks Academy mentors: We are now using Context API instead of Flux. [Use this boilerplate instead](https://github.com/4GeeksAcademy/react-hello-webapp) :warning:
 
 # Hello World with React + Flux
 
